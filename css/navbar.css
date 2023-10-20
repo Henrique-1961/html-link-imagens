@@ -1,0 +1,41 @@
+.navbar {
+    padding: 20px 0;
+    user-select: none;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+}
+
+.nav-logo {
+    display: flex;
+    float: left;
+}
+
+.nav-logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px 40px;
+    margin: 0 10px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.nav-link:hover {
+    background-color: rgb(48, 48, 48);
+}

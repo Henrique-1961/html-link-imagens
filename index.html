@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EA Sports | Home</title>
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header class="container">
+        <nav class="navbar">
+            <a class="nav-logo" href="#"><img src="imgs/logo.png" alt="EA Sports"></a>
+
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="esportes/basquete/index.html">NBA 2K</a></li>
+                <li class="nav-item"><a class="nav-link" href="esportes/formula1/index.html">F1</a></li>
+                <li class="nav-item"><a class="nav-link" href="esportes/futebol/index.html">FC</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container content">
+        <section>
+            <h1>EA Sports</h1>
+            <h2>A melhor companhia de jogos para você</h2>
+
+            <img id="slide-0" class="backimage disable" src="imgs/basquete.png" alt="">
+            <img id="slide-1" class="backimage disable" src="imgs/futebol.png" alt="">
+            <img id="slide-2" class="backimage disable" src="imgs/formula1.png" alt="">
+            <div class="mask"></div>
+        </section>
+
+        <hr class="line-break">
+
+        <section>
+            <h1>Nossos Produtos</h1>
+
+            <div class="card-grid">
+                <a href="esportes/futebol/index.html" class="card">
+                    <img src="imgs/fc-box.png" alt="FC 2023">
+                    <br>
+                    <h3>Linha FC</h3>
+                </a>
+                
+                <a href="esportes/basquete/index.html" class="card">
+                    <img src="imgs/nba2k23-box.png" alt="NBA 2K23">
+                    <br>
+                    <h3>Linha NBA 2K</h3>
+                </a>
+                
+                <a href="esportes/formula1/index.html" class="card">
+                    <img src="imgs/f122-box.png" alt="F1 2023">
+                    <br>
+                    <h3>Linha F1</h3>
+                </a>
+            </div>
+        </section>
+        
+        <hr class="line-break">
+        
+        <section>
+            <h1>Sobre</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque nobis dolor nulla mollitia, optio aspernatur quisquam perferendis natus incidunt libero sit impedit, magnam, repudiandae repellat recusandae qui deleniti et? Soluta.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perferendis pariatur dolorem ratione. Ad aspernatur est qui magnam quasi amet delectus odit nostrum consequatur. Culpa ratione iusto architecto porro earum.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laborum non quos consequuntur ullam ipsa quibusdam odit maxime aperiam amet cupiditate nihil et atque quia eos neque accusantium, dolor voluptate!</p>
+        </section>
+
+        <hr class="line-break">
+
+        <section>
+            <h1>Visite-nos</h1>
+            <div class="image-grid">
+                <div id="div-1"><img class="location-image" src="imgs/location-0.png" alt="EA Sports"></div>
+                <div id="div-2"><img class="location-image" src="imgs/location-1.png" alt="EA Sports"></div>
+                <a href="https://www.bing.com/maps?osid=53555c42-a1a1-4fa9-b2fc-d5681d60cff2&cp=37.523257~-122.254207&lvl=16&pi=0&imgid=6bb177a2-fc2b-4a97-ba12-d98deb01b4f2&v=2&sV=2&form=S00027" id="div-3"><img class="location-image" src="imgs/map.png" alt="Map"></a>
+                <div id="div-4"><img class="location-image" src="imgs/location-2.png" alt="EA Sports"></div>
+            </div>
+        </section>
+
+        <hr class="line-break">
+
+        <section>
+            <h1>Nossos fundadores</h1>
+            <div class="avatar-grid">
+                <div class="avatar">
+                    <img src="imgs/avatar-0.png" alt="Henrique">
+                    <br>
+                    <h3>Henrique Cardoso de Souza</h3>
+                </div>
+                
+                <div class="avatar">
+                    <img src="imgs/avatar-1.png" alt="Fernanda">
+                    <br>
+                    <h3>Fernanda de Souza Alves</h3>
+                </div>
+                
+                <div class="avatar">
+                    <img src="imgs/avatar-2.png" alt="Wallace">
+                    <br>
+                    <h3>Wallace Ferdinando Leoa</h3>
+                </div>
+            </div>
+        </section>
+
+        <hr class="line-break">
+
+        <section>
+            <h1>Formas de pagamento aceitas</h1>
+            <div class="avatar-grid">
+                <div class="avatar">
+                    <img src="imgs/pix.png" alt="Pix" style="width: 239px; height: 102px">
+                    <br>
+                    <h3>Pix</h3>
+                </div>
+                
+                <div class="avatar">
+                    <img src="imgs/dinheiro.png" alt="Dinheiro">
+                    <br>
+                    <h3>Dinheiro</h3>
+                </div>
+                
+                <div class="avatar">
+                    <img src="imgs/cartao.png" alt="Cartão" style="width: 139px; height: 102px">
+                    <br>
+                    <h3>Cartão</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <hr class="container line-break">
+
+    <footer>
+        <h5>&copy; 2023 - EA Sports</h5>
+    </footer>
+
+    <script>
+        let imageIndex = 0;
+        const maxImageIndex = 2;
+
+        function changeBackimage()
+        {
+            let img = [];
+
+            for (let i = 0; i <= maxImageIndex; i++)
+            {
+                img.push(
+                    document.getElementById("slide-" + i)
+                )
+            }
+
+            for (let i = 0; i < img.length; i++)
+            {
+                if (i == imageIndex)
+                {
+                    img[i].classList.remove("disable");
+                    continue;
+                }
+
+                img[i].classList.add("disable");
+            }
+
+            imageIndex = imageIndex + 1 > maxImageIndex ? 0 : imageIndex + 1;
+        }
+
+        changeBackimage();
+        setInterval(changeBackimage, 6000);
+    </script>
+</body>
+</html>

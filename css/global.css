@@ -1,0 +1,43 @@
+@import url("navbar.css");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Comfortaa', sans-serif;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.content {
+    padding-top: 50px;
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 50pt;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 15pt;
+    margin-bottom: 20px;
+}
+
+.line-break {
+    margin: 50px auto 10px auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
