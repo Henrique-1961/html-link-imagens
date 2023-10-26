@@ -1,0 +1,82 @@
+.card-grid {
+    display: grid;
+    place-items: center;
+    user-select: none;
+}
+
+.card {
+    width: 80%;
+    height: 300px;
+    padding: 20px;
+    transition: 0.4s;
+    border-radius: 30px;
+    background-color: black;
+    display: grid;
+    grid-template-areas:
+		"nav nav nav"
+		"logo sidenav advert"
+		"footer footer footer";
+}
+
+.card img {
+    grid-area: logo;
+    width: 200px;
+    margin-left: 50px;
+}
+
+.card-details {
+    grid-area: advert;
+    display: grid;
+    place-items: center;
+    margin-right: 50px;
+    padding: 0;
+}
+
+.card-details button {
+    padding: 17px 35px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid rgb(31, 161, 66);
+    color: rgb(31, 161, 66);
+    transition: 0.4s;
+    cursor: pointer;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 14pt;
+}
+
+.card-details button:hover {
+    background-color: rgb(31, 161, 66);
+    color: white;
+}
+
+.card-details h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 30pt;
+}
+
+.card-details h3 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20pt;
+    color: rgb(231, 196, 41);
+}
+
+.card-details p {
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.creator {
+    width: 200px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+a {
+    color: rgb(41, 142, 231)
+}

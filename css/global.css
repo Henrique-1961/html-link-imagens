@@ -1,4 +1,5 @@
 @import url("navbar.css");
+@import url("footer.css");
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Comfortaa:wght@300&display=swap');
 
 * {
@@ -36,8 +37,7 @@ h2 {
     margin: 50px auto 10px auto;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+.line-break-80 {
+    margin: 50px auto 10px auto;
+    width: 80%;
 }
